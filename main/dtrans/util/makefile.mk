@@ -174,6 +174,26 @@ SHL3DEF=		$(MISC)$/$(SHL3TARGET).def
 DEF3NAME=		$(SHL3TARGET)
 DEF3EXPORTFILE=	exports.dxp
 
+# --- dnd dll ---
+
+SHL4TARGET=$(TARGET4)
+
+SHL4LIBS=	\
+			$(SLB)$/dnd.lib
+
+SHL4STDLIBS= \
+		$(SALLIB)	\
+		$(CPPULIB) 	\
+		$(CPPUHELPERLIB)
+
+SHL4DEPN=
+SHL4IMPLIB=i$(SHL4TARGET)
+
+SHL4DEF=		$(MISC)$/$(SHL4TARGET).def
+
+DEF4NAME=		$(SHL4TARGET)
+DEF4EXPORTFILE=	exports.dxp
+
 .ENDIF			# "$(GUI)"=="OS2"
 .ENDIF # L10N_framework
 

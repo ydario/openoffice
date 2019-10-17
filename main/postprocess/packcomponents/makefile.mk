@@ -338,6 +338,7 @@ my_components += \
 .IF "$(OS)" == "OS2"
 my_components += \
     dtrans \
+    dnd \
     sysdtrans
 .END
 
