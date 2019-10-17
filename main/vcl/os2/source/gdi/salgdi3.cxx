@@ -79,15 +79,15 @@ using namespace vcl;
 // -----------
 
 
-inline W32FIXED FixedFromDouble( double d )
+inline FIXED_W FixedFromDouble( double d )
 {
     const long l = (long) ( d * 65536. );
-    return *(W32FIXED*) &l;
+    return *(FIXED_W*) &l;
 }
 
 // -----------------------------------------------------------------------
 
-inline int IntTimes256FromFixed(W32FIXED f)
+inline int IntTimes256FromFixed(FIXED_W f)
 {
     int nFixedTimes256 = (f.value << 8) + ((f.fract+0x80) >> 8);
     return nFixedTimes256;
