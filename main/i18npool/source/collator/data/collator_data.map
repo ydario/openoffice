@@ -32,7 +32,6 @@ global:
     get_ja_charset;
     get_ja_phonetic_alphanumeric_first;
     get_ja_phonetic_alphanumeric_last;
-    get_ko_charset;
     get_ne_charset;
     get_dz_charset;
     get_ku_alphanumeric;
