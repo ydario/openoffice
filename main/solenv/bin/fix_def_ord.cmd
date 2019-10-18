@@ -33,7 +33,11 @@ do while( lines())
 
 	l = linein()
 	IF LENGTH(l)>0 THEN DO
-  	  say l /* ' @'ord ' RESIDENTNAME' */
+          resident = 'RESIDENTNAME'
+          if POS('_GetVersionInfo',l) >0 THEN resident = ''
+          if POS('_component_getFactory',l) >0 THEN resident = ''
+          if POS('_component_getImplementationEnvironment',l) >0 THEN resident = ''
+	  say l ' @'ord ' ' resident
 	  ord = ord + 1
 	END
 end
