@@ -77,6 +77,7 @@ gb_RCFLAGS := \
 
 gb_CFLAGS := \
 	-Zomf \
+	-O2 -march=i386 \
 	-Wall \
 	-Wendif-labels \
 	-Wextra \
@@ -89,6 +90,7 @@ gb_CFLAGS := \
 
 gb_CXXFLAGS := \
 	-Zomf \
+	-O2 -march=i386 \
 	-Wall \
 	-Wendif-labels \
 	-Wextra \

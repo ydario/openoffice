@@ -109,7 +109,7 @@ CFLAGSPROF=
 CFLAGSDEBUG=-g
 CFLAGSDBGUTIL=
 # Compiler flags for enabling optimazations
-CFLAGSOPT=-s -O1 -march=pentium -mtune=pentium4
+CFLAGSOPT=-g -O2 -march=i386
 # Compiler flags for disabling optimazations
 CFLAGSNOOPT=-O0
 # Compiler flags for discibing the output path
@@ -272,7 +272,7 @@ LIBMGR=emxomfar -p2048
 .ENDIF
 
 # tool for generating import libraries
-IMPLIB=emximp -p2048
+IMPLIB=emximp -l -p2048
 IMPLIBFLAGS=-o
 
 MAPSYM=mapsym

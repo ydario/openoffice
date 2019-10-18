@@ -238,7 +238,8 @@ $(APP1TARGETN): $(APP1OBJS) $(APP1LIBS) \
 .IF "$(APP1LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP1LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP1ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP1ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP1LINKRES:b).rc
+#@-+echo ICON 1 $(EMQ)"$(APP1ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP1LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP1ICON)$(EMQ)" >> $(MISC)$/$(APP1LINKRES:b).rc
 .ENDIF		# "$(APP1ICON)" != ""
 .IF "$(APP1VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP1LINKRES:b).rc
@@ -498,7 +499,7 @@ $(APP2TARGETN): $(APP2OBJS) $(APP2LIBS) \
 .IF "$(APP2LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP2LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP2ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP2ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP2LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP2ICON)$(EMQ)" >> $(MISC)$/$(APP2LINKRES:b).rc
 .ENDIF		# "$(APP2ICON)" != ""
 .IF "$(APP2VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP2LINKRES:b).rc
@@ -758,7 +759,7 @@ $(APP3TARGETN): $(APP3OBJS) $(APP3LIBS) \
 .IF "$(APP3LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP3LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP3ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP3ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP3LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP3ICON)$(EMQ)" >> $(MISC)$/$(APP3LINKRES:b).rc
 .ENDIF		# "$(APP3ICON)" != ""
 .IF "$(APP3VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP3LINKRES:b).rc
@@ -1018,7 +1019,7 @@ $(APP4TARGETN): $(APP4OBJS) $(APP4LIBS) \
 .IF "$(APP4LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP4LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP4ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP4ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP4LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP4ICON)$(EMQ)" >> $(MISC)$/$(APP4LINKRES:b).rc
 .ENDIF		# "$(APP4ICON)" != ""
 .IF "$(APP4VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP4LINKRES:b).rc
@@ -1278,7 +1279,7 @@ $(APP5TARGETN): $(APP5OBJS) $(APP5LIBS) \
 .IF "$(APP5LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP5LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP5ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP5ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP5LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP5ICON)$(EMQ)" >> $(MISC)$/$(APP5LINKRES:b).rc
 .ENDIF		# "$(APP5ICON)" != ""
 .IF "$(APP5VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP5LINKRES:b).rc
@@ -1538,7 +1539,7 @@ $(APP6TARGETN): $(APP6OBJS) $(APP6LIBS) \
 .IF "$(APP6LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP6LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP6ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP6ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP6LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP6ICON)$(EMQ)" >> $(MISC)$/$(APP6LINKRES:b).rc
 .ENDIF		# "$(APP6ICON)" != ""
 .IF "$(APP6VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP6LINKRES:b).rc
@@ -1798,7 +1799,7 @@ $(APP7TARGETN): $(APP7OBJS) $(APP7LIBS) \
 .IF "$(APP7LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP7LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP7ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP7ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP7LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP7ICON)$(EMQ)" >> $(MISC)$/$(APP7LINKRES:b).rc
 .ENDIF		# "$(APP7ICON)" != ""
 .IF "$(APP7VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP7LINKRES:b).rc
@@ -2058,7 +2059,7 @@ $(APP8TARGETN): $(APP8OBJS) $(APP8LIBS) \
 .IF "$(APP8LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP8LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP8ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP8ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP8LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP8ICON)$(EMQ)" >> $(MISC)$/$(APP8LINKRES:b).rc
 .ENDIF		# "$(APP8ICON)" != ""
 .IF "$(APP8VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP8LINKRES:b).rc
@@ -2318,7 +2319,7 @@ $(APP9TARGETN): $(APP9OBJS) $(APP9LIBS) \
 .IF "$(APP9LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP9LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP9ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP9ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP9LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP9ICON)$(EMQ)" >> $(MISC)$/$(APP9LINKRES:b).rc
 .ENDIF		# "$(APP9ICON)" != ""
 .IF "$(APP9VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP9LINKRES:b).rc
@@ -2578,7 +2579,7 @@ $(APP10TARGETN): $(APP10OBJS) $(APP10LIBS) \
 .IF "$(APP10LINKRES)" != ""
 	@+-$(RM) $(MISC)/$(APP10LINKRES:b).rc > $(NULLDEV)
 .IF "$(APP10ICON)" != ""
-	@-+echo ICON 1 $(EMQ)"$(APP10ICON:s#/#\\\\#)$(EMQ)" >> $(MISC)$/$(APP10LINKRES:b).rc
+	@-+echo ICON 1 $(EMQ)"$(APP10ICON)$(EMQ)" >> $(MISC)$/$(APP10LINKRES:b).rc
 .ENDIF		# "$(APP10ICON)" != ""
 .IF "$(APP10VERINFO)" != ""
 	@-+echo $(EMQ)#define VERVARIANT	$(BUILD) >> $(MISC)/$(APP10LINKRES:b).rc
