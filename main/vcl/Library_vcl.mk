@@ -48,7 +48,7 @@ $(eval $(call gb_Library_set_include,vcl,\
 ifeq ($(GUIBASE),os2)
 $(eval $(call gb_Library_set_include,vcl,\
 	$$(INCLUDE) \
-	-idirafter /@unixroot/usr/dev/toolkit452/h \
+	-idirafter /@unixroot/usr/include/os2tk45 \
 ))
 endif
 ifeq ($(GUIBASE),unx)
@@ -74,7 +74,7 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
     cppuhelper \
     icuuc \
     icule \
-	i18nisolang1 \
+        i18nisolang1 \
 	i18npaper \
     i18nutil \
     jvmaccess \

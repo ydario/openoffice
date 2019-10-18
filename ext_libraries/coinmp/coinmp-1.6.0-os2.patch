@@ -1,5 +1,5 @@
---- misc/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2014-08-27 13:57:26.000000000 +0200
-+++ misc/build/CoinMP-1.6.0/CoinUtils/src/CoinSignal.hpp	2014-08-27 12:15:58.000000000 +0200
+--- misc/CoinMP-1.7.6/CoinUtils/src/CoinSignal.hpp	2014-08-27 13:57:26.000000000 +0200
++++ misc/build/CoinMP-1.7.6/CoinUtils/src/CoinSignal.hpp	2014-08-27 12:15:58.000000000 +0200
 @@ -29,7 +29,7 @@
  
  //-----------------------------------------------------------------------------
@@ -9,8 +9,8 @@
     typedef typeof(SIG_DFL) CoinSighandler_t;
  #  define CoinSighandler_t_defined
  #endif
---- misc/CoinMP-1.6.0/CoinUtils/src/CoinTime.hpp	2011-01-04 00:31:00.000000000 +0100
-+++ misc/build/CoinMP-1.6.0/CoinUtils/src/CoinTime.hpp	2014-08-27 12:58:06.000000000 +0200
+--- misc/CoinMP-1.7.6/CoinUtils/src/CoinTime.hpp	2011-01-04 00:31:00.000000000 +0100
++++ misc/build/CoinMP-1.7.6/CoinUtils/src/CoinTime.hpp	2014-08-27 12:58:06.000000000 +0200
 @@ -23,6 +23,9 @@
  #include <sys/time.h>
  #endif
@@ -52,8 +52,8 @@
    cpu_temp = 0.0;
  #else
    struct rusage usage;
---- misc/CoinMP-1.6.0/CoinMP/src/Makefile.in	2011-08-07 17:09:46.000000000 +0200
-+++ misc/build/CoinMP-1.6.0/CoinMP/src/Makefile.in	2014-08-28 00:29:22.000000000 +0200
+--- misc/CoinMP-1.7.6/CoinMP/src/Makefile.in	2011-08-07 17:09:46.000000000 +0200
++++ misc/build/CoinMP-1.7.6/CoinMP/src/Makefile.in	2014-08-28 00:29:22.000000000 +0200
 @@ -20,6 +20,10 @@
  
  # Author:  Andreas Waechter           IBM    2006-04-13
