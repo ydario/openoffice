@@ -41,6 +41,10 @@ ENVCFLAGS+=/FR$(SLO)$/
 NOOPTFILES= $(SLO)$/RowFunctionParser.obj
 .ENDIF
 
+.IF "$(OS)"=="OS2"
+NOOPTFILES= $(SLO)$/ConnectionWrapper.obj
+.ENDIF
+
 ENVCFLAGS += -DBOOST_SPIRIT_USE_OLD_NAMESPACE
 
 # --- Files --------------------------------------------------------
