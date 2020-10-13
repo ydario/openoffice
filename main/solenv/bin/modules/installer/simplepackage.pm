@@ -797,9 +797,12 @@ sub create_simple_package
 		
 	# Registering the extensions
 
+	if ( ! $^O =~ /os2/i )
+	{
 	$installer::logger::Lang->print( "... registering extensions ...\n" );
 	installer::logger::include_header_into_logfile("Registering extensions:");
 	register_extensions($subfolderdir, $languagestringref, $preregdir);
+	}
 	
 	if ( $installer::globals::compiler =~ /^unxmac/ )
 	{
